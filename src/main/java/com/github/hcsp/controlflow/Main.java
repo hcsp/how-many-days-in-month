@@ -22,29 +22,29 @@ public class Main {
     public static String howManyDaysInMonth(int month) {
         switch (month) {
             case 1:
-                return "一月有31天";
+                return "1月有31天";
             case 2:
-                return "二月有28天";
+                return "2月有28天";
             case 3:
-                return "三月有31天";
+                return "3月有31天";
             case 4:
-                return "四月有30天";
+                return "4月有30天";
             case 5:
-                return "五月有31天";
+                return "5月有31天";
             case 6:
-                return "六月有30天";
+                return "6月有30天";
             case 7:
-                return "七月有31天";
+                return "7月有31天";
             case 8:
-                return "八月有31天";
+                return "8月有31天";
             case 9:
-                return "九月有30天";
+                return "9月有30天";
             case 10:
-                return "十月有31天";
+                return "10月有31天";
             case 11:
-                return "十一月有30天";
+                return "11月有30天";
             case 12:
-                return "十二月有31天";
+                return "12月有31天";
             default:
                 return "非法输入";
         }

@@ -22,44 +22,22 @@ public class Main {
     public static String howManyDaysInMonth(int month) {
         switch (month){
             case 1:
-                System.out.println("1月有31天");
-                break;
-            case 2:
-                System.out.println("2月有28天");
-                break;
             case 3:
-                System.out.println("3月有31天");
-                break;
-            case 4:
-                System.out.println("4月有30天");
-                break;
             case 5:
-                System.out.println("5月有31天");
-                break;
-            case 6:
-                System.out.println("6月有30天");
-                break;
             case 7:
-                System.out.println("7月有31天");
-                break;
             case 8:
-                System.out.println("8月有31天");
-                break;
-            case 9:
-                System.out.println("9月有30天");
-                break;
             case 10:
-                System.out.println("10月有31天");
-                break;
-            case 11:
-                System.out.println("11月有30天");
-                break;
             case 12:
-                System.out.println("12月有31天");
-                break;
+                return month + "月有31天";
+            case 2:
+                return month + "月有28天";
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                return month + "月有30天";
             default:
-                System.out.println("非法输入");
+                return "非法输入";
         }
-        return "";
     }
 }

@@ -20,6 +20,23 @@ public class Main {
      * @return 结果字符串
      */
     public static String howManyDaysInMonth(int month) {
+        if(month < 1 || month > 12) {
+            return "非法输入";
+        } else {
+            if(month == 2) {
+                return month + "月有28天";
+            } else {
+                if(month % 2 == 0 && month < 8) {
+                    return month + "月有30天";
+                } else if(month % 2 != 0 && month < 8){
+                    return month + "月有31天";
+                } else if(month % 2 == 0 && month >= 8){
+                    return month + "月有31天";
+                } else if(month % 2 != 0 && month >= 8) {
+                    return month + "月有30天";
+                }
+            }
+        }
         return "";
     }
 }

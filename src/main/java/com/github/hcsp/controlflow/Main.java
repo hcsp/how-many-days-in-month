@@ -61,7 +61,6 @@ public class Main {
                 break;
             default:
                 return "非法输入";
-
         }
         return month + "月有" + sum + "天";
     }

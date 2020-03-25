@@ -25,7 +25,7 @@ public class Main {
                 return "1月有31天";
 //                break;
             case 2:
-                return "2月有29天";
+                return "2月有28天";
 //                break;
             case 3:
                 return "3月有31天";

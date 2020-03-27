@@ -20,7 +20,6 @@ public class Main {
      * @return 结果字符串
      */
     public static String howManyDaysInMonth(int month) {
-        int days;
         switch (month) {
             case 1:
             case 3:

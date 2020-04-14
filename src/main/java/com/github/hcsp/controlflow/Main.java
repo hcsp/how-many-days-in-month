@@ -30,6 +30,7 @@ public class Main {
             case 12:
                 return month + "月有31天";
             case 4:
+            case 6:
             case 9:
             case 11:
                 return month + "月有30天";

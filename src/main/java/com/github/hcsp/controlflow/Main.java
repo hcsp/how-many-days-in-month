@@ -22,7 +22,7 @@ public class Main {
     public static String howManyDaysInMonth(int month) {
         switch (month) {
             case 2:
-                return "28";
+                return month+"月有28天";
             case 1:
             case 3:
             case 5:
@@ -30,12 +30,12 @@ public class Main {
             case 8:
             case 10:
             case 12:
-                return "31";
+                return month+"月有31天";
             case 4:
             case 6:
             case 9:
             case 11:
-                return "30";
+                return month+"月有30天";
             default:
                 return "非法输入";
 

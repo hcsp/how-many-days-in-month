@@ -20,6 +20,18 @@ public class Main {
      * @return 结果字符串
      */
     public static String howManyDaysInMonth(int month) {
-        return "";
+        if (month < 1 || month > 12) {
+            return "非法输入";
+        }
+
+        int[] threeOne = new int[]{1, 3, 5, 7, 8, 10, 12};
+
+        if (month == 2) return "2月有28天";
+        for (int m : threeOne) {
+            if (m == month) {
+                return month + "月有31天";
+            }
+        }
+        return month + "月有30天";
     }
 }

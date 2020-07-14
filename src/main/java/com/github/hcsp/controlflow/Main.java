@@ -34,9 +34,6 @@ public class Main {
             } else {
                 return month + "月有" + a + "天";
             }
-
-
-
         }
         return "非法输入";
     }

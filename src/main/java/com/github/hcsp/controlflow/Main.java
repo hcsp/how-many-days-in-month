@@ -21,7 +21,7 @@ public class Main {
      */
     public static String howManyDaysInMonth(int month) {
 
-        if (month <= 12 && month >= 1){
+        if (month <= 12 && month >= 1) {
             int a = 28;
             int b = 31;
 

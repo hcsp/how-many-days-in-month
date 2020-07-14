@@ -29,7 +29,7 @@ public class Main {
                     || month == 7
                     || month == 8
                     || month == 10
-                    || month == 12) {
+                    || month == 12)  {
                 return month + "月有" + b + "天";
             } else {
                 return month + "月有" + a + "天";

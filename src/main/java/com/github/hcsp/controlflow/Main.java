@@ -24,16 +24,13 @@ public class Main {
         if (month <= 12 && month >= 1) {
             int a = 28;
             int b = 31;
+            int c = 30;
 
             if (month == 1  ||  month == 3  ||  month == 5 ||  month == 7 ||  month == 8 ||  month == 10 || month == 12) {
                 return month + "月有" + b + "天";
-            } else {
-                return month + "月有" + a + "天";
-            }
-
-
-
-
+            } else if(month == 4  ||  month == 6  ||  month == 9 ||  month == 11 ){
+                return month + "月有" + c + "天";
+            }else {return month + "月有" + a + "天";}
         }
         return "非法输入";
     }

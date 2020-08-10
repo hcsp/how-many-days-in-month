@@ -33,6 +33,7 @@ public class Main {
                 break;
             case 2:
                 day = 28;
+                break;
             case 4:
             case 6:
             case 9:

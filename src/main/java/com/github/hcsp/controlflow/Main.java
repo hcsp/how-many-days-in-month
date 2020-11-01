@@ -34,7 +34,7 @@ public class Main {
      */
     public static String howManyDaysInMonth(int month) {
         if (month >= 1 && month <= 12) {
-            return month + "月有" + getDaysByYearMonth(2020, month) + "天";
+            return month + "月有" + getDaysByYearMonth(2019, month) + "天";
         } else {
             return "非法输入";
         }

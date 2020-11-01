@@ -1,5 +1,7 @@
 package com.github.hcsp.controlflow;
 
+import java.util.Calendar;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(howManyDaysInMonth(0));
@@ -7,6 +9,17 @@ public class Main {
         System.out.println(howManyDaysInMonth(5));
         System.out.println(howManyDaysInMonth(9));
         System.out.println(howManyDaysInMonth(11));
+    }
+
+    public static int getDaysByYearMonth(int year, int month) {
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, year);
+        calendar.set(Calendar.MONTH, month - 1);
+        calendar.set(Calendar.DATE, 1);
+        calendar.roll(Calendar.DATE, -1);
+        int maxDate = calendar.get(Calendar.DATE);
+        return maxDate;
     }
 
     /**
@@ -20,6 +33,10 @@ public class Main {
      * @return 结果字符串
      */
     public static String howManyDaysInMonth(int month) {
-        return "";
+        if (month >= 1 && month <= 12) {
+            return month + "月有" + getDaysByYearMonth(2020, month) + "天";
+        } else {
+            return "非法输入";
+        }
     }
 }

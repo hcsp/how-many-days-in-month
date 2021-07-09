@@ -1,5 +1,7 @@
 package com.github.hcsp.controlflow;
 
+import com.sun.org.apache.xpath.internal.objects.XString;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(howManyDaysInMonth(0));
@@ -20,6 +22,29 @@ public class Main {
      * @return 结果字符串
      */
     public static String howManyDaysInMonth(int month) {
-        return "";
+        String result;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                result = String.format("%d月有%d天", month, 31);
+                break;
+            case 2:
+                result = String.format("%d月有%d天", month, 28);
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                result = String.format("%d月有%d天", month, 30);
+                break;
+            default:
+                result = "非法输入";
+        }
+        return result;
     }
 }

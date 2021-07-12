@@ -19,7 +19,31 @@ public class Main {
      * @param month 月份
      * @return 结果字符串
      */
+    public static String getResultString (int month, int days) {
+        return month + "月有" + days + "天";
+    }
     public static String howManyDaysInMonth(int month) {
+        if (month < 1 || month > 12) {
+            return "非法输入";
+        }
+        //  一三五七八十腊,三十一天永不差,四六九冬三十天,平年二月二十八!
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                return getResultString(month, 31);
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                return getResultString(month, 30);
+            case 2:
+                return getResultString(month, 28);
+        }
         return "";
     }
 }

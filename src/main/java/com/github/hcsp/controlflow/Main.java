@@ -29,11 +29,11 @@ public class Main {
                 case 8:
                 case 10:
                 case 12:
-                    return "31";
+                    return month + "月有31天";
                 case 2:
-                    return "28";
+                    return month + "月有28天";
                 default:
-                    return "30";
+                    return month + "月有30天";
             }
         } else {
             return "非法输入";

@@ -23,19 +23,12 @@ public class Main {
 
         switch (month){
             case 1,3,5,8,7,10,12:
-                System.out.println(month+"月有31天");
-                break;
+                return month + "月有31天";
             case 4,6,9,11:
-                System.out.println(month+"月有30天");
-                break;
+                return month + "月有30天";
             case 2:
-                System.out.println(month+"月有20天");
-                break;
-            default:
-                System.out.println("非法收入");
+                return month + "月有20天";
         }
-
-        return "";
-
+                 return "非法输入";
     }
 }

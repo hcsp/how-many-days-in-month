@@ -44,7 +44,7 @@ public class Main {
             case 11:
                 return   "11月有30天";
             case 12:
-                return   "12月有30天";
+                return   "12月有31天";
             default:
                 return "非法输入";
         }

@@ -30,13 +30,15 @@ public class Main {
             case 11:
                 days = 31;
                 break;
-            case 2:
             case 4:
             case 6:
             case 8:
             case 10:
             case 12:
                 days = 30;
+                break;
+            case 2:
+                days = 28;
                 break;
             default:
                 return "非法输入";

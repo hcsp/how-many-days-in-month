@@ -31,9 +31,9 @@ public class Main {
             case 8:
             case 10:
             case 12:
-                return month + "有31天";
+                return month + "月有31天";
             default:
-                return month + "有30天";
+                return month + "月有30天";
         }
     }
 }

@@ -41,7 +41,7 @@ public class Main {
                 days = 28;
                 break;
             default:
-                return "非法字符";
+                return "非法输入";
         }
         return month+"月有"+days+"天";
     }

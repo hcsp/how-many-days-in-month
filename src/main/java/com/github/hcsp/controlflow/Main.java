@@ -27,7 +27,7 @@ public class Main {
                 str = "1月有31天";
                 break;
             case 2:
-                str = "1月有28天";
+                str = "2月有28天";
                 break;
             case 3:
                 str = "3月有31天";
